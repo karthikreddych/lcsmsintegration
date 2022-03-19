@@ -23,6 +23,7 @@
             "header": "",
             "format": "json",
             "useJwt": true,
+            "customerKey": "c28122fe-4a15-47e8-8d99-1c8ec49072b0",
             "timeout": 10000
         }
     },
@@ -30,22 +31,26 @@
       "applicationExtensionKey": "209e21cb-8e2b-4c8b-b29b-df6ceccf7079", 
       "save": {
         "url": "https://lcsmsintegration.herokuapp.com/journeybuilder/save",
-          "verb": "POST",
+        "verb": "POST",
+        "customerKey": "c28122fe-4a15-47e8-8d99-1c8ec49072b0",
         "useJwt": true
        },
        "publish": {
         "url": "https://lcsmsintegration.herokuapp.com/journeybuilder/publish",
-           "verb": "POST",
+        "verb": "POST",
+        "customerKey": "c28122fe-4a15-47e8-8d99-1c8ec49072b0",
         "useJwt": true
        },
       "stop": {
         "url": "https://lcsmsintegration.herokuapp.com/journeybuilder/stop",
-           "verb": "POST",
+        "verb": "POST",
+        "customerKey": "c28122fe-4a15-47e8-8d99-1c8ec49072b0",
         "useJwt": true
       },
       "validate": {
         "url": "https://lcsmsintegration.herokuapp.com/journeybuilder/validate",
         "verb": "POST",
+        "customerKey": "c28122fe-4a15-47e8-8d99-1c8ec49072b0",
         "useJwt": true
       }
     },
