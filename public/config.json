@@ -59,6 +59,7 @@
           "fullscreen": false
         }
     },
+    
     "schema": {
         "arguments": {
             "execute": {
