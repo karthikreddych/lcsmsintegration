@@ -90,9 +90,41 @@ define([
         var postcardURLValue = $('#postcard-url').val();
         var postcardTextValue = $('#postcard-text').val();
 
-        payload['arguments'].execute.inArguments = [{
+       /* payload['arguments'].execute.inArguments = [{
             "tokens": authTokens
-        }];
+        }];*/
+        
+         payload['arguments'].execute.inArguments = [{
+                  "loanId": "{{Contact.Attribute.LCSMS.loanId}}",
+				"eventType": TemplateNameValue,
+				"communicationChannel": "{{Contact.Attribute.LCSMS.communicationChannel}}",
+				"primaryActorId": "{{Contact.Attribute.LCSMS.primaryActorId}}",
+				"externalReferences": [],
+				"businessUnit": "{{Contact.Attribute.LCSMS.businessUnit}}",
+				"messageContent": "{{Contact.Attribute.LCSMS.messageContent}}",
+				"messageSubjectLine": "{{Contact.Attribute.LCSMS.messageSubjectLine}}",
+				"note": "{{Contact.Attribute.LCSMS.note}}",
+				"source": "{{Contact.Attribute.LCSMS.source}}",
+				"sourceMessageId": "{{Contact.Attribute.LCSMS.sourceMessageId}}",
+				"vendor": "{{Contact.Attribute.LCSMS.vendor}}",
+				"vendorTemplateId": TemplateIDValue,
+				"messageParams": {
+					"key1": "",
+					"key2": ""
+				},
+				"messageOptions": {
+					"doNotCheckDNC": "{{Contact.Attribute.LCSMS.doNotCheckDNC}}",
+					"channelAddress": "{{Contact.Attribute.LCSMS.channelAddress}}",
+					"doNotCheckSmsCompliance": "{{Contact.Attribute.LCSMS.doNotCheckSmsCompliance}}"
+				},
+				"messageSchedulingOptionsList": [{
+					"scheduleTime": "{{Contact.Attribute.LCSMS.scheduleTime}}",
+					"messageContent": "{{Contact.Attribute.LCSMS.messageContent}}"
+				}]
+
+}];
+        
+        
         
         payload['metaData'].isConfigured = true;
 
