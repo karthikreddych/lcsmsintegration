@@ -27,6 +27,7 @@
         }
     },
     "configurationArguments": {
+      "applicationExtensionKey": "209e21cb-8e2b-4c8b-b29b-df6ceccf7079", 
       "save": {
         "url": "https://lcsmsintegration.herokuapp.com/journeybuilder/save",
           "verb": "POST",
