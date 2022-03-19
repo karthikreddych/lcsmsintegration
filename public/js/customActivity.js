@@ -96,7 +96,7 @@ define([
         
          payload['arguments'].execute.inArguments = [{
                   "loanId": "{{Contact.Attribute.LCSMS.loanId}}",
-				"eventType": TemplateNameValue,
+				//"eventType": TemplateNameValue,
 				"communicationChannel": "{{Contact.Attribute.LCSMS.communicationChannel}}",
 				"primaryActorId": "{{Contact.Attribute.LCSMS.primaryActorId}}",
 				"externalReferences": [],
@@ -107,7 +107,7 @@ define([
 				"source": "{{Contact.Attribute.LCSMS.source}}",
 				"sourceMessageId": "{{Contact.Attribute.LCSMS.sourceMessageId}}",
 				"vendor": "{{Contact.Attribute.LCSMS.vendor}}",
-				"vendorTemplateId": TemplateIDValue,
+				//"vendorTemplateId": TemplateIDValue,
 				"messageParams": {
 					"key1": "",
 					"key2": ""
